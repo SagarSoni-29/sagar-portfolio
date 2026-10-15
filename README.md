@@ -2,7 +2,7 @@
 
 A modern, interactive personal portfolio built with **HTML, CSS, and JavaScript** to showcase my AI/Data Science journey, projects, and contact details.
 
-🔗 **Live Portfolio:** *Add your deployed link here*  
+🔗 **Live Portfolio:** https://sagar-portfolio-gamma-six.vercel.app/
 📍 **Location:** Jaipur, India
 
 ---
