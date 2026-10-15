@@ -424,6 +424,7 @@ document.addEventListener('pointerover', (e) => {
     if (t && snd) bp(t.matches('.card') ? 440 : 560);
   }
 });
+// Contact form: uses Web3Forms when an access key is set, otherwise opens the visitor's email app
 const WEB3FORMS_KEY = '0c1d99c3-2d44-490e-9c10-9e267328adc5';
 const CONTACT_EMAIL = 'sagar1983soni@gmail.com';
 const contactForm = $('#cf');
@@ -436,13 +437,16 @@ function openEmailApp({ name, email, message }) {
   link.click();
   contactStatus.innerHTML = `Your email app should open with the message ready to send. Nothing opened? <a href="https://mail.google.com/mail/?view=cm&to=${CONTACT_EMAIL}&su=${subject}&body=${body}" target="_blank" rel="noopener">Open it in Gmail</a>.`;
 }
+// A unique subject keeps Gmail from grouping messages from the same sender into one thread
+const timestamp = () => new Date().toLocaleString([], { dateStyle: 'medium', timeStyle: 'medium' });
+
 async function sendMessage(data) {
   const response = await fetch('https://api.web3forms.com/submit', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
     body: JSON.stringify({
       access_key: WEB3FORMS_KEY,
-      subject: 'Portfolio message from ' + data.name,
+      subject: `Portfolio message from ${data.name} (${timestamp()})`,
       ...data,
     }),
   });
