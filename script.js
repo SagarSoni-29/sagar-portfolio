@@ -424,8 +424,7 @@ document.addEventListener('pointerover', (e) => {
     if (t && snd) bp(t.matches('.card') ? 440 : 560);
   }
 });
-// Contact form: uses Web3Forms when an access key is set, otherwise opens the visitor's email app
-const WEB3FORMS_KEY = '';
+const WEB3FORMS_KEY = '0c1d99c3-2d44-490e-9c10-9e267328adc5';
 const CONTACT_EMAIL = 'sagar1983soni@gmail.com';
 const contactForm = $('#cf');
 const contactStatus = $('#cs');
