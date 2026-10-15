@@ -71,6 +71,9 @@ h4 {
 section {
   position: relative;
 }
+[hidden] {
+  display: none !important;
+}
 h2 {
   font-size: clamp(2.2rem, 6vw, 4.2rem);
   line-height: 1;
