@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Sagar Soni | AI & Data Science</title>
+    <meta
+      name="description"
+      content="Sagar Soni, B.Tech AI & Data Science student building AI-powered productivity tools."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;600&family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="pb"></div>
+    <div id="cg"></div>
+    <nav aria-label="Main">
+      <b>SS</b>
+      <a class="h" href="#about">About</a>
+      <a href="#work">Work</a>
+      <a class="h" href="#journey">Journey</a>
+      <a href="#contact">Contact</a>
+      <div class="sound-wrap">
+        <button id="sd" aria-label="Toggle sound">🔇</button>
+        <div id="sound-tip" class="sound-tip-pill">Enable sound for better experience 💡</div>
+      </div>
+
+      <button id="tg" aria-label="Toggle light and dark theme">☾</button>
+    </nav>
+
+    <header id="top" class="hero">
+      <canvas id="cv" aria-hidden="true"></canvas>
+      <div class="hw">
+        <div class="term" aria-hidden="true"><span id="tl"></span><i class="cur"></i></div>
+        <h1 id="nm" aria-label="Sagar Soni"></h1>
+        <p class="tag">
+          I build AI tools that make studying, job hunting and reading long documents feel
+          effortless.
+        </p>
+        <a class="btn mag" href="#work">See my work</a
+        ><a class="btn o mag" href="#contact">Get in touch</a>
+        <div class="now"><i></i>Currently building: scanned PDF extraction on a GPU server</div>
+        <div class="bot" aria-hidden="true">
+          <div class="fb"><canvas id="r3" aria-hidden="true"></canvas></div>
+        </div>
+      </div>
+      <a class="sc" href="#about" aria-label="Scroll to About"><span class="ms"></span>Scroll</a>
+    </header>
+
+    <div class="mq" aria-hidden="true">
+      <div class="mt" id="mt">
+        <span>Artificial intelligence</span><span>Data science</span><span>✦</span><span>Java</span
+        ><span>Python</span><span>✦</span><span>Full-stack projects</span><span>Cloud</span
+        ><span>✦</span>
+      </div>
+    </div>
+
+    <section id="about" class="paper">
+      <div class="wrap g2">
+        <div class="ph" id="ph">
+          <img id="i1" src="assets/sagar-soni.jpg" alt="Portrait of Sagar Soni" />
+          <div class="duo"></div>
+          <img id="i2" src="assets/sagar-soni.jpg" alt="" aria-hidden="true" /><span class="hint"
+            >move your cursor</span
+          >
+        </div>
+        <div>
+          <h2 class="greeting">Hi, I'm Sagar. A few things about me:</h2>
+          <p class="fill" id="fl">
+            I'm a third-year B.Tech student in Computer Science, specializing in AI and Data Science
+            at Vivekananda Global University in Jaipur. I like turning messy, real problems into
+            tools people actually enjoy using: a study buddy that quizzes you, a resume builder that
+            gets past ATS filters, a chatbot that reads your documents so you don't have to. Java is
+            my strongest language, Python is where I ship my AI ideas, and I care as much about how
+            a product feels as how it works.
+          </p>
+          <div class="chips">
+            <i class="hl">CGPA 9.65</i><i class="hl">IBM and Infosys interns</i
+            ><i class="hl">AWS Academy graduate</i><i>Cricket</i><i>Swimming</i><i>E-sports</i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="work">
+      <div class="wrap">
+        <h2>Things I've built</h2>
+        <p class="sub">
+          Each one started as something I wished existed while studying or applying for internships.
+        </p>
+        <div class="cards">
+          <article class="card" data-say="Python, Streamlit and SHA-256 login!">
+            <h3>ResumeSpark AI</h3>
+            <p>
+              Fill in your details and get an ATS-friendly resume or cover letter in seconds. Built
+              during my IBM PBEL internship with a Python backend, a Streamlit frontend and SHA-256
+              secure authentication.
+            </p>
+            <div class="tags"><i>Python</i><i>Streamlit</i><i>SHA-256</i></div>
+            <a
+              class="mag"
+              href="https://resumespark-ai.streamlit.app/"
+              target="_blank"
+              rel="noopener"
+              >Open live demo</a
+            >
+          </article>
+          <article class="card" data-say="This one is going for a patent!">
+            <span class="badge">Selected by my university for patent filing</span>
+            <h3>NeuroLearn AI</h3>
+            <p>
+              An AI study buddy. Chat with it, upload a document and ask anything about it, generate
+              quizzes on any topic, get notes summarized, and earn points and achievements as you
+              learn.
+            </p>
+            <div class="tags"><i>AI chat</i><i>Quizzes</i><i>Summaries</i><i>Gamified</i></div>
+            <a
+              class="mag"
+              href="https://neuro-learn-ai-v2.vercel.app/"
+              target="_blank"
+              rel="noopener"
+              >Open live demo</a
+            >
+          </article>
+          <article class="card" data-say="Chat with many docs at once.">
+            <h3>SmartDoc AI</h3>
+            <p>
+              Upload any number of documents, get instant summaries, then chat across all of them
+              like a modern AI assistant, with your conversation history saved. Built during my
+              Infosys Springboard internship.
+            </p>
+            <div class="tags"><i>Python</i><i>UI development</i><i>Document Q&amp;A</i></div>
+          </article>
+          <article class="card" data-say="Scanned PDFs in, clean data out.">
+            <h3>Scanned PDF extraction</h3>
+            <p>
+              Part of an internship project that turns scanned timetable PDFs into structured data.
+              A vision-language OCR model, Chandra OCR, runs on a GPU server, and table parsing plus
+              validation layers keep the extracted data accurate across different university
+              formats.
+            </p>
+            <div class="tags"><i>Chandra OCR</i><i>GPU server</i><i>FastAPI</i></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="journey" class="jr">
+      <div class="wrap g3">
+        <div>
+          <h2>What I work with</h2>
+          <p class="sub sub-skills">Pick one, they like to wiggle.</p>
+          <div class="sk">
+            <i class="big">Java</i><i>Python</i><i>C</i><i>Artificial intelligence</i
+            ><i>Data science</i><i>Streamlit</i><i>UI development</i><i>CSS</i
+            ><i>AWS cloud basics</i><i>Problem solving</i>
+          </div>
+        </div>
+        <div>
+          <h2>Where I've learned</h2>
+          <p class="sub sub-learn">Internships, classes and certificates so far.</p>
+          <div class="tlw" id="tlw">
+            <div class="ti">
+              <small>Feb to Apr 2026</small>
+              <h4>IBM PBEL virtual intern</h4>
+              <p>Eight weeks of Python libraries and Streamlit. Built ResumeSpark AI.</p>
+            </div>
+            <div class="ti">
+              <small>Jan to Mar 2026</small>
+              <h4>Infosys Springboard virtual intern</h4>
+              <p>
+                Eight weeks of UI development, Python and problem solving. Built two full-stack
+                projects, including SmartDoc AI.
+              </p>
+            </div>
+            <div class="ti">
+              <small>Aug 2024 to now</small>
+              <h4>B.Tech, Vivekananda Global University</h4>
+              <p>Computer Science with AI and Data Science, third year, CGPA 9.65.</p>
+            </div>
+            <div class="ti">
+              <small>Sept 2024</small>
+              <h4>AWS Academy Cloud Foundations</h4>
+              <p>Graduated from the AWS Academy cloud course.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="ct">
+      <div class="wrap">
+        <h2>Have an idea?<br />Let's build it.</h2>
+        <form id="cf" class="cf">
+          <div class="r2">
+            <label
+              >Your name<input
+                name="name"
+                required
+                placeholder="Jane Doe"
+                autocomplete="name" /></label
+            ><label
+              >Email address<input
+                name="email"
+                type="email"
+                required
+                placeholder="jane@example.com"
+                autocomplete="email"
+            /></label>
+          </div>
+          <label
+            >Message<textarea
+              name="message"
+              rows="5"
+              required
+              placeholder="Tell me about your idea..."
+            ></textarea></label
+          ><input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" hidden /><button
+            class="mag"
+            type="submit"
+          >
+            Send message
+          </button>
+          <p id="cs" class="cs" role="status"></p>
+        </form>
+        <a class="em mag" href="mailto:sagar1983soni@gmail.com">sagar1983soni@gmail.com</a>
+        <div class="soc">
+          <a class="mag" href="https://github.com/SagarSoni-29" target="_blank" rel="noopener"
+            >GitHub</a
+          ><a
+            class="mag"
+            href="https://www.linkedin.com/in/sagar-soni-506895358/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+        </div>
+        <small>Sagar Soni, Jaipur, India</small>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
